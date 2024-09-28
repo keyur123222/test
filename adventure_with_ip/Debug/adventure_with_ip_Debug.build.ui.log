@@ -1,0 +1,42 @@
+2024-09-28T18:41:56.41096100255-18:41:56 **** Build of configuration Debug for project adventure_with_ip ****
+000-make all 
+000-make --no-print-directory pre-build
+000-a9-linaro-pre-build-step
+000- 
+000-make --no-print-directory main-build
+000-Building file: ../src/adventures_with_ip.c
+000-Invoking: ARM v7 gcc compiler
+000-arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/adventures_with_ip.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I/home/user/Downloads/test/export/test/sw/test/standalone_domain/bspinclude/include -MMD -MP -MF"src/adventures_with_ip.d" -MT"src/adventures_with_ip.o" -o "src/adventures_with_ip.o" "../src/adventures_with_ip.c"
+000-../src/adventures_with_ip.c: In function 'menu':
+000/adventure_with_ip/src/adventures_with_ip.c76-1-1this 'while' clause does not guard... [-Wmisleading-indentation]1-../src/adventures_with_ip.c:76:2: warning: this 'while' clause does not guard... [-Wmisleading-indentation]
+000-   76 |  while (!XUartPs_IsReceiveData(UART_BASEADDR));
+000-      |  ^~~~~
+000/adventure_with_ip/src/adventures_with_ip.c77-1-1...this statement, but the latter is misleadingly indented as if it were guarded by the 'while'0-../src/adventures_with_ip.c:77:5: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'while'
+000-   77 |     inp = XUartPs_ReadReg(UART_BASEADDR, XUARTPS_FIFO_OFFSET);
+000-      |     ^~~
+000-Finished building: ../src/adventures_with_ip.c
+000- 
+000-Building file: ../src/audio.c
+000-Invoking: ARM v7 gcc compiler
+000-arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/audio.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I/home/user/Downloads/test/export/test/sw/test/standalone_domain/bspinclude/include -MMD -MP -MF"src/audio.d" -MT"src/audio.o" -o "src/audio.o" "../src/audio.c"
+000-Finished building: ../src/audio.c
+000- 
+000-Building file: ../src/ip_functions.c
+000-Invoking: ARM v7 gcc compiler
+000-arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/ip_functions.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I/home/user/Downloads/test/export/test/sw/test/standalone_domain/bspinclude/include -MMD -MP -MF"src/ip_functions.d" -MT"src/ip_functions.o" -o "src/ip_functions.o" "../src/ip_functions.c"
+000-Finished building: ../src/ip_functions.c
+000- 
+000-Building target: adventure_with_ip.elf
+000-Invoking: ARM v7 gcc linker
+000-arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L/home/user/Downloads/test/export/test/sw/test/standalone_domain/bsplib/lib -o "adventure_with_ip.elf"  ./src/adventures_with_ip.o ./src/audio.o ./src/ip_functions.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+000-Finished building target: adventure_with_ip.elf
+000- 
+000-Invoking: ARM v7 Print Size
+000-arm-none-eabi-size adventure_with_ip.elf  |tee "adventure_with_ip.elf.size"
+000-   text	   data	    bss	    dec	    hex	filename
+000-  33076	   1200	  22680	  56956	   de7c	adventure_with_ip.elf
+000-Finished building: adventure_with_ip.elf.size
+000- 
+00255-
+18:41:57 Build Finished (took 826ms)
+
