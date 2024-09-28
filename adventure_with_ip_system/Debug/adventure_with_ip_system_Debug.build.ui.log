@@ -1,0 +1,10 @@
+2024-09-28T18:41:58.0446800255-18:41:58 **** Build of configuration Debug for project adventure_with_ip_system ****
+000-make all 
+000-Generating bif file for the system project
+000-Executing command '::scw::generate_bif -xpfm /home/user/Downloads/test/export/test/test.xpfm -domains standalone_domain -bifpath /home/user/Downloads/adventure_with_ip_system/Debug/system.bif' on XSCT
+000-sdcard_gen --xpfm /home/user/Downloads/test/export/test/test.xpfm --sys_config test --bif /home/user/Downloads/adventure_with_ip_system/Debug/system.bif --bitstream /home/user/Downloads/adventure_with_ip/_ide/bitstream/adventures_with_ip_system_wrapper.bit --elf /home/user/Downloads/adventure_with_ip/Debug/adventure_with_ip.elf,ps7_cortexa9_0
+000-creating BOOT.BIN using /home/user/Downloads/adventure_with_ip/_ide/bitstream/adventures_with_ip_system_wrapper.bit
+000-Running /home/software/Xilinx/Vitis/2021.1/bin/bootgen  -image /home/user/Downloads/adventure_with_ip_system/Debug/sd_card_temp/boot.bif -w -o i BOOT.BIN
+00255-
+18:42:05 Build Finished (took 7s.339ms)
+
